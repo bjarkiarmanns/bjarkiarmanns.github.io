@@ -43,11 +43,37 @@
     <p>Contact me at <a href="mailto:bjarki.armannsson@arnastofnun.is" target="_blank">bjarki.armannsson@arnastofnun.is</a>. I also post about linguistics and language technology on my Substack, <a href="https://bjarkiarmannsson.substack.com/" target="_blank">Bjarkamál</a></li> (in Icelandic).
     </p>
 
-    <h2>Selected work</h2>
+    <h2>Selected Work</h2>
     <h3>Conference Papers</h3>
     <ul>
         <li>Steinþór Steingrímsson and <strong>Bjarki Ármannsson</strong>. 2025. In Pursuit of the Trivial. Proceedings of the 9th Digital Humanities in the Nordic and Baltic Countries
-        conference. <a href="https://journals.uio.no/dhnbpub/article/view/12302/10171" target="_blank">[paper]</a></li>
+        conference. <a href="https://journals.uio.no/dhnbpub/article/view/12302/10171" target="_blank">[paper]</a><span class="bibtex-link" onclick="toggleBibtex()">BibTeX</span>
+        <div id="bibtexBox" class="bibtex-popup">
+            @article{steingrimssonarmannsson2025trivial,<br>
+              title={In Pursuit of the Trivial},<br>
+              author={Steingrímsson, Steinþór and Ármannsson, Bjarki},<br>
+              journal={Proceedings of the 9th Digital Humanities in the Nordic and Baltic Countries conference.},<br>
+              year={2025},<br>
+              volume={7},<br>
+            }
+            </div>
+            
+            <script>
+              function toggleBibtex() {
+                const box = document.getElementById("bibtexBox");
+                box.style.display = (box.style.display === "block") ? "none" : "block";
+              }
+            
+              // Optional: Close if clicking outside
+              document.addEventListener("click", function(event) {
+                const box = document.getElementById("bibtexBox");
+                const link = document.querySelector(".bibtex-link");
+                if (!box.contains(event.target) && !link.contains(event.target)) {
+                  box.style.display = "none";
+                }
+              });
+            </script>
+    </li>
         <li><strong>Bjarki Ármannsson</strong>, Finnur Ágúst Ingimundarson and Einar Freyr Sigurðsson. 2025. An Icelandic Linguistic Benchmark for Large 
             Language Models. Proceedings of the 25th Nordic Conference on Computational Linguistics (NoDaLiDa). <a href="https://dspace.ut.ee/server/api/core/bitstreams/dee677bb-31da-4d92-8915-26b5c5170fed/content" target="_blank">[paper]</a></li>
         <li><strong>Bjarki Ármannsson</strong>, Hinrik Hafsteinsson, Jóhannes B. Sigtryggsson, Atli Jasonarson, Einar Freyr Sigurðsson and 
@@ -74,7 +100,7 @@
         Article for the webzine Mannamál. <a href="https://mannamal.is/god-bilstjori-og-bestunarangur-thad-sem-gervigreindin-laerir-og-laerir-ekki-i-islensku/" target="_blank">[link]</a></li>
     </ul>
 
-    <h3>Language resources</h3>
+    <h3>Language Resources</h3>
     <ul>
         <li><strong>Bjarki Ármannsson</strong>, Finnur Ágúst Ingimundarson and Einar Freyr Sigurðsson. 2024. 
             Icelandic Linguistic Benchmark for LLMs 24.10, CLARIN-IS. <a href="http://hdl.handle.net/20.500.12537/348" target="_blank">[repo]</a></li>
@@ -88,6 +114,14 @@
     <ul>
         <li><strong>Bjarki Ármannsson</strong>. 2021. Grapheme-to-phoneme transcription of English words in Icelandic text. MA thesis, Uppsala University.
         <a href="http://uu.diva-portal.org/smash/get/diva2:1571500/FULLTEXT01.pdf" target="_blank">[thesis]</a></li>
+    </ul>
+
+    <h3>Media Appearences</h3>
+    <ul>
+        <li>Íslenska og gervigreind. [AI and the Icelandic language.] Youtube interview with Icelandic media outlet Samstöðin about LLMs and Icelandic in the digital age. <a href="https://www.youtube.com/watch?v=Hnv4ndcd4Z8" target="_blank">[link]</a></li>
+        <li>Íslenskar „maðkabækur“ til sölu á Amazon. ["Maggot books" in Icelandic for sale on Amazon.] Interviewed by Icelandic National Broadcaster RÚV about AI-generated books in Icelandic online.
+            <a href="https://nyr.ruv.is/frettir/innlent/2025-05-04-islenskar-madkabaekur-til-solu-a-amazon-442789" target="_blank">[link]</a>
+        </li>
     </ul>
 </body>
 </html>
