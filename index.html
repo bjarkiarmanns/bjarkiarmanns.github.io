@@ -27,6 +27,24 @@
             max-width: 150px; 
             border-radius: 50%; 
         }
+        .bibtex-popup {
+            display: none;
+            position: absolute;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            white-space: pre;
+            font-family: monospace;
+            width: 300px;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .bibtex-link {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +65,7 @@
     <h3>Conference Papers</h3>
     <ul>
         <li>Steinþór Steingrímsson and <strong>Bjarki Ármannsson</strong>. 2025. In Pursuit of the Trivial. Proceedings of the 9th Digital Humanities in the Nordic and Baltic Countries
-        conference. <a href="https://journals.uio.no/dhnbpub/article/view/12302/10171" target="_blank">[paper]</a><span class="bibtex-link" onclick="toggleBibtex()">BibTeX</span>
+        conference. <a href="https://journals.uio.no/dhnbpub/article/view/12302/10171" target="_blank">[paper] </a><span class="bibtex-link" onclick="toggleBibtex()">[bibtex]</span>
         <div id="bibtexBox" class="bibtex-popup">
             @article{steingrimssonarmannsson2025trivial,<br>
               title={In Pursuit of the Trivial},<br>
